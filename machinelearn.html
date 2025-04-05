@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+
+    .course-card {
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .course-img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+
+    .course-info {
+      padding: 25px;
+    }
+
+
+    .course-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+
+    .course-meta {
+      font-size: 0.95rem;
+      color: #6c757d;
+      margin-bottom: 15px;
+    }
+
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2a9d8f;
+    }
+
+
+    .btn-enroll {
+      background-color: #e63946;
+      color: white;
+      font-weight: 500;
+    }
+
+
+    .syllabus-box {
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    }
+
+
+    .syllabus-box h3 {
+      margin-bottom: 15px;
+    }
+
+
+    .syllabus-box ul {
+      padding-left: 20px;
+    }
+
+
+    .what-you-learn {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 25px;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./register.html">Register</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+  <div class="card course-card">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="./Machine.jpg" class="img-fluid course-img" >
+      </div>
+      <div class="col-md-8">
+        <div class="course-info">
+          <h2 class="course-title">Machine Learning Mastery: From Data to Decisions</h2>
+          <div class="course-meta">
+            <p><strong>Instructor:</strong> Sneha Sharma and Dhriti Verma</p>
+            <p><strong>Duration:</strong> 24 weeks| 7 hrs/week</p>
+            <p><strong>Level:</strong> Intermediate</p>
+          </div>
+          <p>
+            Unlock the power of data with this hands-on Machine Learning Bootcamp. Whether you're an absolute beginner or looking to sharpen your skills, this course takes you from the fundamentals of ML to building intelligent systems using real-world datasets. Just contains practical, career-boosting content.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="price">₹7999</span>
+            <button class="btn btn-enroll">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="what-you-learn">
+    <h3><strong>What you'll learn</strong></h3>
+    <ul>
+      <li>  Understand core concepts of Supervised & Unsupervised Learning</li>
+      <li>Build models using Python, Scikit-learn, and Pandas</li>
+      <li>Evaluate model performance with real-world metrics</li>
+      <li>Work on projects like spam detection, customer segmentation, etc.</li>
+      <li>Deploy your ML models using Streamlit or Flask</li>
+      <li>Tackle overfitting and improve accuracy with tuning techniques</li>
+     
+    </ul>
+  </div>
+
+
+  <div class="syllabus-box">
+    <h3>📘 Module 1: Web Foundations</h3>
+    <ul>
+        <li>
+          📌 <strong>Module 1: ML Foundations & Python Refresh</strong>
+          <ul>
+            <li>Refresher: Python basics (loops, functions, libraries)</li>
+            <li>Numpy, Pandas for data handling</li>
+            <li>Introduction to Machine Learning & its types</li>
+            <li>Real-world use cases & industry applications</li>
+          </ul>
+        </li>
+       
+        <li>
+          📌 <strong>Module 2: Data Preprocessing & Exploration</strong>
+          <ul>
+            <li>Handling missing values & outliers</li>
+            <li>Label encoding & feature scaling</li>
+            <li>EDA (Exploratory Data Analysis) with Pandas & Seaborn</li>
+            <li>Correlation, heatmaps, and visual storytelling</li>
+          </ul>
+        </li>
+       
+        <li>
+          📌 <strong>Module 3: Supervised Learning Techniques</strong>
+          <ul>
+            <li>Regression: Linear & Polynomial</li>
+            <li>Classification: KNN, Decision Trees, Logistic Regression</li>
+            <li>Model evaluation: Accuracy, Precision, Recall, F1-Score</li>
+            <li>Confusion Matrix & ROC-AUC</li>
+          </ul>
+        </li>
+       
+        <li>
+          📌 <strong>Module 4: Unsupervised Learning & Clustering</strong>
+          <ul>
+            <li>K-Means Clustering</li>
+            <li>Hierarchical Clustering</li>
+            <li>Dimensionality Reduction: PCA</li>
+            <li>Customer Segmentation use case</li>
+          </ul>
+        </li>
+       
+        <li>
+          📌 <strong>Module 5: Model Tuning & Validation</strong>
+          <ul>
+            <li>Overfitting vs Underfitting</li>
+            <li>Cross-validation techniques</li>
+            <li>GridSearchCV & RandomizedSearchCV</li>
+            <li>Feature importance & selection</li>
+          </ul>
+        </li>
+       
+        <li>
+          📌 <strong>Module 6: Real-World Projects</strong>
+          <ul>
+            <li>Build ML projects from scratch</li>
+            <li>Spam Email Classifier</li>
+            <li>Predict House Prices</li>
+            <li>Customer Churn Predictor</li>
+            <li>Use Jupyter Notebooks & GitHub for project showcase</li>
+          </ul>
+        </li>
+       
+        <li>
+          📌 <strong>Module 7: Bonus – Model Deployment</strong>
+          <ul>
+            <li>Intro to Flask/Streamlit</li>
+            <li>Deploy ML model as a web app</li>
+            <li>Hosting with Render/Streamlit Cloud</li>
+            <li>Share your model with others live!</li>
+          </ul>
+        </li>
+      </ul>
+     
+  </div>
+
+
+  <div class="syllabus-box">
+    <h3><strong>Our Reviews</strong></h3>
+    <ul>
+        <div class="container my-4">
+            <h3 class="mb-3">What our learners say</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">⭐️⭐️⭐️⭐️</h5>
+                    <p class="card-text">“"The real-world projects helped me build an actual portfolio. Loved the clear explanations”</p>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <small class="text-muted">— Aarya Mehendale</small>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">⭐️⭐️⭐️⭐️⭐️</h5>
+                    <p class="card-text">Everything from Python refreshers to model tuning was explained step-by-step. Perfect for beginners!</p>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <small class="text-muted">—Aditi Sharma, Data Science Aspirant</small>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+                    <h5 class="card-title">⭐️⭐️⭐️⭐️⭐️</h5>
+                    <p class="card-text">“I deployed my very first ML model online thanks to the final module!!</p>
+                  </div>
+                  <div class="card-footer bg-transparent border-top-0">
+                    <small class="text-muted">—Sneha Kulkarni, Fresher</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+    </ul>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
